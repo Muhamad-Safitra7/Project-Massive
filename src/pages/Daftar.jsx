@@ -9,6 +9,7 @@ import { faFacebookSquare, faGoogle, faTwitter } from "@fortawesome/free-brands-
 
 const Daftar = () => {
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showFBModal, setShowFBModal] = useState(false);
   const [showGoogleModal, setShowGoogleModal] = useState(false);
@@ -28,6 +29,8 @@ const Daftar = () => {
     try {
       const response = await axios.post("http://localhost:5000/login", {
         email: username,
+        email: email,
+        username: username,
         password: password,
       });
 
@@ -73,15 +76,26 @@ const Daftar = () => {
     <Container className="login-container" style={{width: "450px",}}>
       <h1 className="login-header text-center" >NusaTech</h1>
       <Form onSubmit={handleSubmit} className="text-center">
-      <p style={{display: "-ms-inline-grid", textAlign: "left", marginBottom: "0px"}}>Username</p>
+      <p style={{display: "-ms-inline-grid", textAlign: "left", marginBottom: "0px"}}>Email</p>
         <Form.Group controlId="formBasicEmail" className="d-flex justify-content-center align-items-center " >
           <Form.Control
             type="email"
             placeholder="Enter email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            className="form-control-sm"
+            style={{border: "1px solid black", borderRadius: "30px", height: "35px", marginBottom: "10px"}}
+          />
+        </Form.Group>
+        <p style={{display: "-ms-inline-grid", textAlign: "left", marginBottom: "0px"}}>Username</p>
+        <Form.Group controlId="formBasicPassword 1" className="d-flex justify-content-center align-items-center ">
+          <Form.Control
+            type="text"
+            placeholder="Masukkan Username "
             value={username}
             onChange={(event) => setUsername(event.target.value)}
             className="form-control-sm"
-            style={{border: "1px solid black", borderRadius: "30px", height: "35px", marginBottom: "10px"}}
+            style={{border: "1px solid black", borderRadius: "30px", height: "35px",marginBottom: "20px"}}
           />
         </Form.Group>
         <p style={{display: "-ms-inline-grid", textAlign: "left", marginBottom: "0px"}}>Password</p>
@@ -95,18 +109,7 @@ const Daftar = () => {
             style={{border: "1px solid black", borderRadius: "30px", height: "35px",marginBottom: "10px"}}
           />
         </Form.Group>
-        
-		<p style={{display: "-ms-inline-grid", textAlign: "left", marginBottom: "0px"}}>Konfirmasi Password</p>
-        <Form.Group controlId="formBasicPassword 1" className="d-flex justify-content-center align-items-center ">
-          <Form.Control
-            type="text"
-            placeholder="Konfirmasi Password "
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            className="form-control-sm"
-            style={{border: "1px solid black", borderRadius: "30px", height: "35px",marginBottom: "20px"}}
-          />
-        </Form.Group>
+
 
         <div  >
           <Button variant="primary" style={{width : "350px"}} >Daftar</Button>
@@ -211,7 +214,6 @@ const Daftar = () => {
         </Modal.Footer>
       </Modal>
 
-      
     </Container>
   );
 };
