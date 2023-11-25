@@ -9,7 +9,6 @@ import { faFacebookSquare, faGoogle, faTwitter } from "@fortawesome/free-brands-
 
 const Daftar = () => {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showFBModal, setShowFBModal] = useState(false);
   const [showGoogleModal, setShowGoogleModal] = useState(false);
@@ -29,8 +28,6 @@ const Daftar = () => {
     try {
       const response = await axios.post("http://localhost:5000/login", {
         email: username,
-        email: email,
-        username: username,
         password: password,
       });
 

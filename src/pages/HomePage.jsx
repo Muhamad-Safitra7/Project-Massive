@@ -11,8 +11,9 @@ import "./css/HomePage.css"
 export default function Beranda() {
 	return (
 		<main id="beranda">
-			<section id="hero">
-				<div className="container text-center " style={{marginTop: "-80px", }}>
+			<section id="hero" style={{ backgroundImage: "url('/assets/home/home.png')",backgroundSize:"cover", width:"100vw", height:"100vh" }} >
+				<div className="container text-center " style={{marginTop: "-80px",  }} >
+
 					<h3>
 						KELAS PUBLIC SPEAKING ONLINE
 					</h3>
