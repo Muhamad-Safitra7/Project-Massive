@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
 import TestimoniPage from "./pages/TestimoniPage";
 import FaqPage from "./pages/FaqPage";
-
+import Baca from "./pages/Baca";
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <Route path="/kelas" Component={KelasPage}/>
           <Route path="/testimoni" Component={TestimoniPage}/>
          <Route path="/faq" Component={FaqPage}/>
+         <Route path="/baca" Component={Baca}/>
         </Routes>
        <FooterComponent />
     </BrowserRouter>
