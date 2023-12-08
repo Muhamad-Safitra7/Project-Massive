@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "judul": "Yan Ardian Subhan",
+      "tanggal": "02 November 2023",
+      "gambar": "/public/assets/Kursus/1.png"
+    },
+    {
+      "id": 3,
+      "judul": "Yan Ardian Subhan",
+      "tanggal": "02 November 2023",
+      "gambar": "/public/assets/Kursus/2.png"
+    },
+    {
+      "id": 2,
+      "judul": "Yan Ardian Subhan",
+      "tanggal": "02 November 2023",
+      "gambar": "/public/assets/Kursus/1.png"
+    },
+    {
+        "judul": "Yan Ardian Subhan",
+        "tanggal": "02 November 2023",
+        "gambar": "/public/assets/Kursus/3.png"
+    }
+  ]

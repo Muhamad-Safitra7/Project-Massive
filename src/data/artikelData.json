@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "judul": "Memahami Public Speaking",
+      "deskripsi": "Seni Menguasai Berbicara di Depan Umum: Membangun Koneksi yang Berdampak",
+      "gambar": "/public/assets/halaman artikel/1.png"
+    },
+    
+    {
+      "id": 2,
+      "judul": "PENTING NYA SKILL PUBLIC SPEAKING",
+      "deskripsi": "Kenapa harus Menguasai Public Speaking?",
+      "gambar": "/public/assets/halaman artikel/4.png"
+    },
+    {
+      "id": 3,
+      "judul": "Pentingnya Keterampilan Berbicara Di Depan Umum ",
+      "deskripsi": "Kenapa harus menguasai berbicara di depan umum?",
+      "gambar": "/public/assets/halaman artikel/2.png"
+    },
+    {
+      "id": 4,
+      "judul": "Cara Efektif Menggunakan Teknologi dalam Pengelolaan Keuangan Bisnis",
+      "deskripsi": "Pebisnis usaha menengah kebawah dapat menggunakan teknologi terbaru dalam pengelolaan keuangan bisnis. Ini mencakup aplikasi keuangan, perangkat lunak akuntansi, dan alat digital lainnya yang dapat...",
+      "gambar": "/public/assets/halaman artikel/3.png"
+    }
+  ]

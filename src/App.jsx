@@ -1,40 +1,48 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 import NavbarComponent from "./components/NavbarComponent";
-import FooterComponent from "./components/FooterComponent"
+import FooterComponent from "./components/FooterComponent";
 import Login from "./pages/Login";
 import Daftar from "./pages/Daftar";
-import Baru from "./pages/Baru";
+import Video from "./pages/Video";
 import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
-import TestimoniPage from "./pages/TestimoniPage";
-import FaqPage from "./pages/FaqPage";
-import Baca from "./pages/Baca";
+import Artikel from "./pages/Artikel";
+import Webinar from "./pages/Webinar";
+import Kursus from "./pages/Kursus";
+import DetailArtikel from "./pages/DetailArtikel";
+import PembayaranSukses from "./pages/PembayaranSukses";
+import PembayaranGagal from "./pages/PembayaranGagal";
+import Pembayaran from "./pages/Pembayaran";
 
 
 function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Helmet>
+          <title>Nusa Tech.</title>
+        </Helmet>
 
-  return <div>
-    <BrowserRouter>
-      <Helmet>
-				<title>Nusa Tech.</title>
-			</Helmet>
-
-      <NavbarComponent />
+        <NavbarComponent />
         <Routes>
-          <Route path="/login" Component={Login}/>
-          <Route path="/daftar" Component={Daftar}/>
-          <Route path="/baru" Component={Baru}/>
-          <Route path="/" Component={HomePage}/>
-          <Route path="/kelas" Component={KelasPage}/>
-          <Route path="/testimoni" Component={TestimoniPage}/>
-         <Route path="/faq" Component={FaqPage}/>
-         <Route path="/baca" Component={Baca}/>
+          <Route path="/login" Component={Login} />
+          <Route path="/daftar" Component={Daftar} />
+          <Route path="/video" Component={Video} />
+          <Route path="/" Component={HomePage} />
+          <Route path="/kelas" Component={KelasPage} />
+          <Route path="/webinar" Component={Webinar} />
+          <Route path="/artikel" Component={Artikel} />
+          <Route path="/kursus" Component={Kursus} />
+          <Route path="/detail/:id" Component={DetailArtikel} />
+          <Route path="/sukses" Component={PembayaranSukses} />
+          <Route path="/gagal" Component={PembayaranGagal} />
+          <Route path="/bayar" Component={Pembayaran} />
         </Routes>
-       <FooterComponent />
-    </BrowserRouter>
-  </div>
-  
+        <FooterComponent />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
