@@ -14,7 +14,7 @@ import DetailArtikel from "./pages/DetailArtikel";
 import PembayaranSukses from "./pages/PembayaranSukses";
 import PembayaranGagal from "./pages/PembayaranGagal";
 import Pembayaran from "./pages/Pembayaran";
-
+import Profil from "./pages/profil";
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function App() {
           <Route path="/sukses" Component={PembayaranSukses} />
           <Route path="/gagal" Component={PembayaranGagal} />
           <Route path="/bayar" Component={Pembayaran} />
+          <Route path="/profil" Component={Profil}/>
         </Routes>
         <FooterComponent />
       </BrowserRouter>

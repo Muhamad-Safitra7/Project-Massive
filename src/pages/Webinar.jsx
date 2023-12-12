@@ -78,6 +78,9 @@ const Webinar = () => {
                 <h4>Jane Doe</h4>
                 <p>Manager PT Mencari Cinta <br />Sejati</p>
                 </div>
+                <div>
+                  
+                </div>
                 </div>
               </div>
             </div>
